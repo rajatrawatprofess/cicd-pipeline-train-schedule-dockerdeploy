@@ -9,7 +9,7 @@ pipeline {
             }
         }
         stage('Build Docker Image') {
-            When {
+            when {
                 branvh 'master'
             }
             steps {
